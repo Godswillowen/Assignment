@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>QuickMart Retail Store</title>
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <header>
+      <h1>QuickMart Retail Store</h1>
+      <p>Your one-stop shop for everyday items</p>
+    </header>
+
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+      <h2 id="products">Featured Products</h2>
+      <div class="product-grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/200" alt="Rice" />
+          <h3>Bag of Rice</h3>
+          <p>₦35,000</p>
+          <button class="btn" onclick="addToCart('Bag of Rice', 35000)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/200" alt="Oil" />
+          <h3>Vegetable Oil 5L</h3>
+          <p>₦12,000</p>
+          <button class="btn" onclick="addToCart('Vegetable Oil 5L', 12000)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/200" alt="Soap" />
+          <h3>Laundry Soap</h3>
+          <p>₦800</p>
+          <button class="btn" onclick="addToCart('Laundry Soap', 800)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/200" alt="Milk" />
+          <h3>Milk Tin</h3>
+          <p>₦1,500</p>
+          <button class="btn" onclick="addToCart('Milk Tin', 1500)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+          <p>No items in cart</p>
+        </div>
+        <h3 id="cart-total">Total: ₦0</h3>
+        <button class="btn" onclick="checkout()">Checkout</button>
+      </div>
+
+      <div id="contact">
+        <h2>Contact Us</h2>
+        <p><b>Address:</b> 12 Market Road, Uyo, Akwa Ibom</p>
+        <p><b>Phone:</b> 080-123-4567</p>
+        <p><b>Hours:</b> Mon - Sat: 8am - 8pm</p>
+      </div>
+    </div>
+
+    <footer>© 2026 QuickMart Retail Store | All Rights Reserved</footer>
+
+    <script src="shop.js"></script>
+  </body>
+</html>
